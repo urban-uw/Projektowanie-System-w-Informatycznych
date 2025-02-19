@@ -1,0 +1,3 @@
+sekwencja_n = function(n) {
+  return(1:n)
+}
