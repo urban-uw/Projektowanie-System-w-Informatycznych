@@ -1,0 +1,43 @@
+text <- readLines(file.choose())
+text
+library(qdap)
+
+frequent_terms <- freq_terms(text)
+frequent_terms
+frequent_terms <- freq_terms(text, stopwords = Top200Words)
+plot(frequent_terms)
+
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ)
+
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ, min.freq = 4)
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ, max.words = 5)
+
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ, min.freq = 4, colors = brewer.pal(9,"Blues"))
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ, min.freq = 4, colors = brewer.pal(9,"Reds"))
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ, min.freq = 4, colors = brewer.pal(9,"Greens"))
+
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ, min.freq = 4, colors = brewer.pal(8,"Dark2"))
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ, max.words = 5, colors = brewer.pal(8,"Accent"))
+
+text2 <- readLines(file.choose())
+
+
+frequent_terms2 <- freq_terms(text2)
+frequent_terms2
+frequent_terms2 <- freq_terms(text2, stopwords = Top200Words)
+plot(frequent_terms2)
+
+wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ)
+
+wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, min.freq = 4)
+wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, max.words = 5)
+
+wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, min.freq = 4, colors = brewer.pal(9,"Blues"))
+wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, min.freq = 4, colors = brewer.pal(9,"Reds"))
+wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, min.freq = 4, colors = brewer.pal(9,"Greens"))
+
+wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, min.freq = 4, colors = brewer.pal(8,"Dark2"))
+wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, max.words = 5, colors = brewer.pal(8,"Accent"))
+
+# Tematyka wystapien jest pdobna, ale jest wiele roznic miedzy przemowieniami,
+#w tym z 2021 wielokrotnie pojawiaja sie slowa job,plan,act zas w tym z 2024 mamy president,future,history
