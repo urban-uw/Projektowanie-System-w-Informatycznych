@@ -39,5 +39,3 @@ wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, min.freq = 4, colors = bre
 wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, min.freq = 4, colors = brewer.pal(8,"Dark2"))
 wordcloud(frequent_terms2$WORD, frequent_terms2$FREQ, max.words = 5, colors = brewer.pal(8,"Accent"))
 
-# Tematyka wystapien jest pdobna, ale jest wiele roznic miedzy przemowieniami,
-#w tym z 2021 wielokrotnie pojawiaja sie slowa job,plan,act zas w tym z 2024 mamy president,future,history
