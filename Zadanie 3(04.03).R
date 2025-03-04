@@ -139,6 +139,31 @@ for (file_path in file_paths) {
   cat("\n")
 }
 
+# Najczęściej występujące słowa w pliku Biden2021.txt :
+          word freq
+65    american   45
+63     america   44
+1349      will   44
+679       jobs   43
+177        can   29
+917       plan   26
+67   americans   25
+903     people   24
+855        one   22
+1370     world   22
+
+Najczęściej występujące słowa w pliku Biden2024.txt :
+          word freq
+1149 president   47
+62     america   41
+66    american   34
+1094    people   34
+1647      will   34
+4          ’ve   32
+3           ’m   31
+1023       now   31
+1619      want   27
+624        get   25
 
 
 
