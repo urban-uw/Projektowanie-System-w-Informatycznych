@@ -1,8 +1,15 @@
 file:///Users/ulaurban/Downloads/Zadanie-3-04.03-.html
 
 
+
+
+
 # Instalacja i ładowanie wymaganych pakietów ----
-# install.packages(c("tm", "wordcloud", "RColorBrewer", "ggplot2"))
+options(repos = c(CRAN = "https://cran.r-project.org"))
+
+
+install.packages(c("tm", "wordcloud", "RColorBrewer", "ggplot2"))
+install.packages("rmarkdown")
 library(tm)
 library(wordcloud)
 library(RColorBrewer)
@@ -137,7 +144,18 @@ for (file_path in file_paths) {
   cat("Najczęściej występujące słowa w pliku", file_path, ":\n")
   print(head(freq_df, 10))
   cat("\n")
+  
+
 }
+
+
+
+
+
+
+
+
+
 
 # Najczęściej występujące słowa w pliku Biden2021.txt :
           word freq
